@@ -107,7 +107,6 @@ bot.on("message", function(message) {
             server.queue.push(args[1]);
 
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
-            break;
         case ""
             message.channel.sendMessage("Do !help to see the commands available!");
             break;
