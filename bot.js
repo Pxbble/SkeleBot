@@ -107,8 +107,8 @@ bot.on("message", function(message) {
             server.queue.push(args[1]);
 
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
-        case "!"
-            message.channel.sendMessage("Do !help to see the commands available!");
+        case "help"
+            message.channel.sendMessage("Do !commands to see commands!");
             break;
          default:
          message.channel.sendMessage("That command does not exist! Put that in #command-request and Pebble will try to make it x3");
