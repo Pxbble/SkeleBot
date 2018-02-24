@@ -110,11 +110,12 @@ bot.on("message", function(message) {
       case "":
             message.channel.sendMessage("Do !commands to see commands!");
             break;
+         // Sending a message to a channel when a user joins Discord.
+        member.guild.channels.get('416780123166212106').send('** + member.user.username + '**', has joined the server!');
+          
          default:
          message.channel.sendMessage("That command does not exist! Put that in #command-request and Pebble will try to make it x3");
           
-        // Sending a message to a channel when a user joins Discord.
-        member.guild.channels.get('416780123166212106').send('** + member.user.username + '**', has joined the server!');
 
    }
 });
