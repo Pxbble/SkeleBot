@@ -28,8 +28,9 @@ var fortunes = [
     "LOL NEVER",
     "Yes on so many levels",
     "Soz No",
-    "Its a Yes for me",
-    "Itz a no for me",
+    "Just don't",
+    "OMG YES",
+    "Pls No",
 ];
 
 bot.on("ready", function() {
@@ -67,6 +68,9 @@ bot.on("message", function(message) {
       break;
       case "ohreally":
       message.channel.sendMessage("yes really")
+      break;
+      case "shadey":
+      message.channel.sendMessage("```The Owner and Creator of this Disc Server```")
       break;
       case "8ball":
       if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
