@@ -79,7 +79,7 @@ bot.on("message", function(message) {
       message.channel.sendMessage("_The Great Owner Of MomentoNetwork_")
       break;
       case "commands":
-      message.channel.sendMessage(message.author.toString() + "**, ```To view the commands, Please go into the channel #command-request```**")
+      message.channel.sendMessage(message.author.toString() + "**, ```To view the commands, Please go into the channel #commands```**")
       break;
       case "8ball":
       if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
