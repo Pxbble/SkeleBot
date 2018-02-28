@@ -70,7 +70,16 @@ bot.on("message", function(message) {
       message.channel.sendMessage("yes really")
       break;
       case "shadey":
-      message.channel.sendMessage("```The Owner and Creator of this Disc Server```")
+      message.channel.sendMessage("```The Owner and Creator of the Discord Server```")
+      break;
+      case "momento":
+      message.channel.sendMessage("**Its a fun server, Join now! :mc.momentonetwork.net**")
+      break;
+      case "danny":
+      message.channel.sendMessage("_The Great Owner Of MomentoNetwork_")
+      break;
+      case "commands":
+      message.channel.sendMessage(message.author.toString() + "**, ```To view the commands, Please go into the channel #command-request```**")
       break;
       case "8ball":
       if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
